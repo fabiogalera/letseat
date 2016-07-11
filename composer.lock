@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ec9dda8d3a17bdcd76a21ac60a492251",
-    "content-hash": "6978337a3c461fbc26492656cc3b651c",
+    "hash": "8bcd8af5535c6820322f19e4a10864f2",
+    "content-hash": "588b5a510a81fda53d794e9ba7429e43",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -882,21 +882,22 @@
         },
         {
             "name": "jansenfelipe/nfephp-serialize",
-            "version": "v3.10.0",
+            "version": "v3.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jansenfelipe/nfephp-serialize.git",
-                "reference": "cf3cd33e6633a9ea2e24d9b5ff9a71312ce18a65"
+                "reference": "ce917c6cb8b0641c9fbe7448e3fb27ad2738354c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jansenfelipe/nfephp-serialize/zipball/cf3cd33e6633a9ea2e24d9b5ff9a71312ce18a65",
-                "reference": "cf3cd33e6633a9ea2e24d9b5ff9a71312ce18a65",
+                "url": "https://api.github.com/repos/jansenfelipe/nfephp-serialize/zipball/ce917c6cb8b0641c9fbe7448e3fb27ad2738354c",
+                "reference": "ce917c6cb8b0641c9fbe7448e3fb27ad2738354c",
                 "shasum": ""
             },
             "require": {
                 "jms/serializer": "1.0.0",
-                "php": ">=5.6.0"
+                "php": ">=5.6.0",
+                "symfony/yaml": "2.7.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.0@dev"
@@ -923,7 +924,7 @@
                 "nfephp",
                 "php"
             ],
-            "time": "2015-07-22 21:25:15"
+            "time": "2015-07-29 18:47:38"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -2274,23 +2275,23 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.4.2",
+            "version": "v5.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "d8db871a54619458a805229a057ea2af33c753e8"
+                "reference": "4cc92842069c2bbc1f28daaaf1d2576ec4dfe153"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/d8db871a54619458a805229a057ea2af33c753e8",
-                "reference": "d8db871a54619458a805229a057ea2af33c753e8",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/4cc92842069c2bbc1f28daaaf1d2576ec4dfe153",
+                "reference": "4cc92842069c2bbc1f28daaaf1d2576ec4dfe153",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9.1,<0.9.4"
+                "mockery/mockery": "~0.9.1"
             },
             "type": "library",
             "extra": {
@@ -2323,7 +2324,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2016-05-01 08:45:47"
+            "time": "2016-07-08 11:51:25"
         },
         {
             "name": "symfony/console",
@@ -3156,6 +3157,55 @@
                 "dump"
             ],
             "time": "2016-06-29 05:40:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "4bfbe0ed3909bfddd75b70c094391ec1f142f860"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4bfbe0ed3909bfddd75b70c094391ec1f142f860",
+                "reference": "4bfbe0ed3909bfddd75b70c094391ec1f142f860",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-07-01 11:25:50"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -4482,55 +4532,6 @@
             "time": "2016-06-29 05:40:00"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v3.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "2884c26ce4c1d61aebf423a8b912950fe7c764de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/2884c26ce4c1d61aebf423a8b912950fe7c764de",
-                "reference": "2884c26ce4c1d61aebf423a8b912950fe7c764de",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:41:56"
-        },
-        {
             "name": "webmozart/assert",
             "version": "1.0.2",
             "source": {
@@ -4586,7 +4587,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5.9"
+        "php": "^5.6.0"
     },
     "platform-dev": []
 }
